@@ -1,3 +1,206 @@
 <!DOCTYPE html>
-<!-- Full content from canvas already available -->
-</html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aymeric Lemire – Développeur Web Full Stack</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: {
+            primary: '#6366f1',
+            secondary: '#8b5cf6'
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 font-sans">
+  <!-- Hero Section -->
+  <section class="relative text-white py-32 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-6xl font-extrabold mb-4 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">Aymeric Lemire</h1>
+      <p class="text-2xl font-light">Développeur Web Full Stack</p>
+      <p class="mt-4 text-lg opacity-90">Créateur d'applications web élégantes, performantes et scalables</p>
+      <div class="flex justify-center gap-6 mt-8">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" class="h-12">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" class="h-12">
+        $1 style="background-color: white; border-radius: 0.5rem; padding: 0.25rem;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" class="h-12">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" class="h-12 bg-white rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="glass rounded-2xl p-10 shadow-xl">
+      <h2 class="text-4xl font-bold mb-6 text-center text-primary">À propos</h2>
+      <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto text-gray-200">Passionné de technologie, je conçois des solutions digitales sur mesure. J'accompagne mes clients de la conception à la mise en production pour créer des expériences numériques durables et performantes.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-secondary">Mes services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="glass p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold mb-3 text-white">Applications web</h3>
+          <p>Développement d'apps full stack modernes avec React, Next.js, Node.js.</p>
+        </div>
+        <div class="glass p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold mb-3 text-white">API & back-end</h3>
+          <p>REST, GraphQL, MongoDB, Firebase, Express : je construis l'architecture adaptée à vos besoins.</p>
+        </div>
+        <div class="glass p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+          <h3 class="text-xl font-semibold mb-3 text-white">Design & intégration</h3>
+          <p>UI/UX soignés avec Figma, Tailwind, Bootstrap pour un rendu visuel impactant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forfaits -->
+  <section class="py-20 px-6 bg-gray-100 text-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Mes forfaits</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h3 class="text-2xl font-semibold mb-4 text-primary">Landing Page</h3>
+          <p class="text-gray-600 mb-6">Idéale pour présenter un produit, service ou événement avec un design impactant.</p>
+          <ul class="mb-6 space-y-2 text-sm">
+            <li>✔️ Design sur mesure</li>
+            <li>✔️ 1 page responsive</li>
+            <li>✔️ Livraison rapide</li>
+          </ul>
+          <div class="text-2xl font-bold">à partir de 250€</div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h3 class="text-2xl font-semibold mb-4 text-primary">Site Vitrine</h3>
+          <p class="text-gray-600 mb-6">Un site professionnel complet pour présenter votre activité et vos services.</p>
+          <ul class="mb-6 space-y-2 text-sm">
+            <li>✔️ Jusqu’à 5 pages</li>
+            <li>✔️ CMS possible (WordPress / Headless)</li>
+            <li>✔️ SEO de base inclus</li>
+          </ul>
+          <div class="text-2xl font-bold">à partir de 600€</div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h3 class="text-2xl font-semibold mb-4 text-primary">Site sur-mesure</h3>
+          <p class="text-gray-600 mb-6">Pour les projets personnalisés (marketplace, SaaS, back-office...).</p>
+          <ul class="mb-6 space-y-2 text-sm">
+            <li>✔️ Architecture scalable</li>
+            <li>✔️ Admin personnalisé</li>
+            <li>✔️ Connecté à vos outils</li>
+          </ul>
+          <div class="text-2xl font-bold">sur devis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appel à l'action Forfaits -->
+  <section class="py-16 px-6 bg-primary text-white text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Prêt à lancer votre projet ?</h2>
+      <p class="mb-6">Choisissez le forfait qui vous convient ou demandez un devis personnalisé.</p>
+      <a href="mailto:contact@aymericlemire.dev" class="inline-block bg-white text-primary font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">Demander un devis</a>
+    </div>
+  </section>
+
+  <!-- Stack technique -->
+  <section class="py-20 px-6 bg-gray-900">
+    <h2 class="text-4xl font-bold text-center mb-12 text-white">Stack technique</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-6xl mx-auto">
+      <!-- Front-end -->
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-10 mb-2" alt="HTML5" title="HTML5">
+        <span class="font-bold text-primary">HTML5</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-10 mb-2" alt="CSS3" title="CSS3">
+        <span class="font-bold text-primary">CSS3</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-10 mb-2" alt="JavaScript" title="JavaScript">
+        <span class="font-bold text-primary">JavaScript</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="h-10 mb-2" alt="TypeScript" title="TypeScript">
+        <span class="font-bold text-primary">TypeScript</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="h-10 mb-2" alt="React" title="React">
+        <span class="font-bold text-primary">React</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" class="h-10 mb-2 bg-white rounded" alt="Next.js" title="Next.js">
+        <span class="font-bold text-primary">Next.js</span>
+      </div>
+
+      <!-- Back-end -->
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="h-10 mb-2" alt="Node.js" title="Node.js">
+        <span class="font-bold text-primary">Node.js</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" class="h-10 mb-2 bg-white rounded" alt="Express" title="Express">
+        <span class="font-bold text-primary">Express</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="h-10 mb-2" alt="MongoDB" title="MongoDB">
+        <span class="font-bold text-primary">MongoDB</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="h-10 mb-2" alt="PostgreSQL" title="PostgreSQL">
+        <span class="font-bold text-primary">PostgreSQL</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="h-10 mb-2" alt="Firebase" title="Firebase">
+        <span class="font-bold text-primary">Firebase</span>
+      </div>
+
+      <!-- Outils & UI/UX -->
+      <div class="flex flex-col items-center">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" class="h-10 mb-2" alt="Tailwind CSS" title="Tailwind CSS">
+        <span class="font-bold text-primary">Tailwind CSS</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="h-10 mb-2" alt="Bootstrap" title="Bootstrap">
+        <span class="font-bold text-primary">Bootstrap</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="h-10 mb-2" alt="Figma" title="Figma">
+        <span class="font-bold text-primary">Figma</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="h-10 mb-2" alt="Docker" title="Docker">
+        <span class="font-bold text-primary">Docker</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-10 mb-2" alt="Git" title="Git">
+        <span class="font-bold text-primary">Git</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="h-10 mb-2 bg-white rounded" alt="GitHub" title="GitHub">
+        <span class="font-bold text-primary">GitHub</span>
+      </div>
+    </div>
+  </section>
